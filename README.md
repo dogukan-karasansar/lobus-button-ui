@@ -13,16 +13,30 @@ npm install --save lobus-button-ui
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React from 'react'
+import { Button } from 'lobus-button-ui'
 
-import MyComponent from 'lobus-button-ui'
-import 'lobus-button-ui/dist/index.css'
-
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const App = () => {
+  return (
+    <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '100vh', flexDirection: 'column'}}>
+      <Button text={'Primary'} type={'primary'} />
+      <br />
+      <br />
+      <Button text={'Default'} type={'default'} />
+      <br />
+      <br />
+      <Button text={'Dashed'} type={'dashed'} />
+      <br />
+      <br />
+      <Button text={'Text'} type={'text'} />
+      <br />
+      <br />
+      <Button text={'Link'} type={'link'} />
+    </div>
+  )
 }
+
+export default App
 ```
 
 ## License

@@ -1,10 +1,24 @@
 import React from 'react'
-
-import { ExampleComponent } from 'lobus-button-ui'
-import 'lobus-button-ui/dist/index.css'
+import { Button } from 'lobus-button-ui'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return (
+    <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '100vh', flexDirection: 'column'}}>
+      <Button text={'Primary'} type={'primary'} />
+      <br />
+      <br />
+      <Button text={'Default'} type={'default'} />
+      <br />
+      <br />
+      <Button text={'Dashed'} type={'dashed'} />
+      <br />
+      <br />
+      <Button text={'Text'} type={'text'} />
+      <br />
+      <br />
+      <Button text={'Link'} type={'link'} />
+    </div>
+  )
 }
 
 export default App
